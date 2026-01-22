@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+  color: black;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin: 6px;
+}
+
+#notificationBar {
+  background: green;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#map {
+  width: 60%;
+  height: 520px;
+}
+
+.right-panel {
+  width: 40%;
+  padding: 10px;
+}
+
+.bin-card {
+  background: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-left: 8px solid green;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.bin-card.yellow { border-color: orange; }
+.bin-card.red { border-color: red; }
+
+.stats {
+  background: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.area-label {
+  font-weight: bold;
+  color: #0d47a1;
+  background: rgba(255,255,255,0.9);
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid #bbb;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  #map, .right-panel {
+    width: 100%;
+  }
+}

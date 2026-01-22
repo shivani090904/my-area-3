@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Waste Garbage Collection</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="notificationBar">
+  <span id="notificationText">System Initializing...</span>
+  <button onclick="toggleTheme()">🌙</button>
+</div>
+
+<h2>Smart Waste Garbage Collection System – Nizamabad</h2>
+
+<div class="main">
+  <div id="map"></div>
+
+  <div class="right-panel">
+    <div id="binPanel"></div>
+
+    <div class="stats">
+      <h3>Route Statistics</h3>
+      <p id="distance">Distance: -- km</p>
+      <p id="time">ETA: -- min</p>
+      <p id="fuel">Fuel Cost: ₹ --</p>
+      <p id="co2">CO₂ Saved: -- kg</p>
+      <button onclick="window.print()">🧾 Generate Report</button>
+    </div>
+
+    <canvas id="analyticsChart"></canvas>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
